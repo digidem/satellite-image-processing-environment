@@ -1,0 +1,18 @@
+aws:
+  # Ubuntu 14.04.3 LTS (Trusty Tahr)
+  # See https://cloud-images.ubuntu.com/releases/14.04/release-20151117/
+  ami               : 'ami-7b89cc11'
+  # Replace this with your AWS access key id
+  access_key_id     : 'AKXXXXXXXXXXXXXXX'
+  # Replace this with your AWS secret access key
+  secret_access_key : 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+  # If you have set up your own keypair change this to the name of the key pair
+  keypair_name      : 'development'
+  # This security group should at least have port 22 (ssh) access
+  security_groups   : [ 'ssh-only' ]
+  region            : 'us-east-1'
+  # Should point to your private key corresponding to the keypair named above
+  pemfile           : '~/.ssh/development.pem'
+  # See https://aws.amazon.com/ec2/instance-types/
+  instance_type     : 'c3.large'
+
