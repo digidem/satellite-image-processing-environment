@@ -4,7 +4,11 @@ This is a [Vagrant](https://www.vagrantup.com) environment for processing satell
 
 - [gdal](http://www.gdal.org) and python scripts for raster processing
 - [landsat-util](https://github.com/developmentseed/landsat-util) for downloading and processing landsat 8 images
-- [tl](https://github.com/mojodna/tl) and [tilelive](https://github.com/mapbox/tilelive) for copying tiles between sources
+- [tl](https://github.com/mojodna/tl) and [tilelive](https://github.com/mapbox/tilelive) for copying tiles between sources. Includes tilelive modules:
+  + [node-mbtiles](https://github.com/mapbox/node-mbtiles) for reading and writing mbtiles
+  + [tilelive-omnivore](https://github.com/mapbox/tilelive-omnivore) for reading TIF and VRT files
+  + [tilelive-http](https://github.com/mojodna/tilelive-http) for copying online map tiles
+  + [tilelive-file](https://github.com/mapbox/tilelive-file) for reading/writing from/to the filesystem
 - [mapbox-tile-copy](https://github.com/mapbox/mapbox-tile-copy) for creating tiles from local geodata files and uploading to s3
 
 ## Installation and Basic Usage
