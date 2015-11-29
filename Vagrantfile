@@ -33,6 +33,7 @@ Vagrant.configure(2) do |config|
     aws.region                = aws_config["region"]
     aws.ami                   = aws_config["ami"]
     aws.keypair_name          = aws_config["keypair_name"]
+    aws.iam_instance_profile_name = aws_config["instance_profile"]
     aws.instance_type         = aws_config["instance_type"]
     aws.terminate_on_shutdown = true
 
