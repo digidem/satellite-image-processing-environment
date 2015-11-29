@@ -52,3 +52,25 @@ Edit `./config/aws.yml` to add your AWS access key ID and AWS secret access key.
 Now you should be ready to simply `vagrant up` and sit back until everything is installed (should take about 5 minutes), then `vagrant ssh` to connect to your machine.
 
 When you are done **do not forget** to `vagrant destroy` or your virtual machine will be left running and you will get a big bill at the end of the month!
+
+## AWS Advanced Usage
+
+You can launch additional instances for multiple processing tasks:
+
+```
+vagrant up --provider=aws instance-1
+```
+
+or you can launch several at once using a regular expression:
+
+```
+vagrant up --provider=aws /instance-[0-4]/
+```
+
+would launch 5 instances. Once you have launched multiple instances you will need to specify the instance name with any vagrant command e.g.
+
+```
+vagrant ssh instance-0
+```
+
+Don't forget to `vagrant destroy` to terminate all your instances when you are done.
