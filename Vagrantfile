@@ -40,6 +40,8 @@ Vagrant.configure(2) do |config|
     override.ssh.username     = "ubuntu"
     override.ssh.private_key_path = aws_config["pemfile"]
     override.vm.synced_folder ".", "/vagrant", disabled: true
+
+    config.vm.provision "shell", path: "bootstrap-aws.sh"
   end
 
   config.vm.provision "shell", path: "bootstrap.sh"

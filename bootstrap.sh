@@ -44,7 +44,7 @@ apt-get -y install gdal-bin libgdal-dev python-pip python-dev python-numpy pytho
   libatlas-base-dev gfortran libfreetype6-dev awscli git python-gdal > /dev/null 2>&1
 
 print_status "Installing awscli"
-pip install awscli
+pip install awscli > /dev/null
 
 print_status "Installing Node"
 # Add nodesource package repo for up-to-date node
