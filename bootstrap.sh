@@ -61,10 +61,10 @@ ln -s /usr/bin/nodejs /usr/bin/node
 # npm update -g npm > /dev/null
 
 print_status "Installing npm packages for tilelive"
-npm install -g --loglevel error mbtiles tilejson tl tilelive tilelive-omnivore tilelive-http tilelive-s3 tilelive-file > /dev/null
+npm install -g --loglevel error mbtiles tilejson tl tilelive digidem/tilelive-omnivore tilelive-http tilelive-s3 tilelive-file > /dev/null
 
 print_status "Installing npm package mapbox-tile-copy"
-npm install -g --loglevel error mapbox-tile-copy > /dev/null
+npm install -g --loglevel error digidem/mapbox-tile-copy > /dev/null
 
 print_status "Installing landsat-util & requirements"
 # This github repo contains wheelhouse files to speed up install of landsat-util
