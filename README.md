@@ -74,3 +74,9 @@ vagrant ssh instance-0
 ```
 
 Don't forget to `vagrant destroy` to terminate all your instances when you are done.
+
+## Example Processing Tasks
+
+Here at [Digital Democracy](http://www.digital-democracy.org/) we often need to share satellite imagery with our partners. Often our partners don't have access to imagery processing tools or the training to use them, so we use this toolset to create composite images, pre-process or merge satellite imagery, or prepare tilesets or geotiffs for viewing offline.
+
+- [Create a pansharpened natural color image from landsat 8](docs/pansharpened_landsat8_rgb.md)
